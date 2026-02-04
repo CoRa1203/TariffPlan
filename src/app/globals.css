@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --primary-header: #1d5b43;
+  --primary-bg: #232829;
+  --secondary-bg: #313637;
+  --primary-text: #ffffff;
+  --secondary-text: #919191;
+  --tertiary-bg: #2d3233;
+  --primary-accent: #ffa500;
+  --status-success: #81fe95;
+  --status-alert: #ffbb00;
+  --status-error: #fd5656;
+  --primary-border: #484d4e;
+  --secondary-border: #606566;
+}
+
+body {
+  color: var(--primary-text);
+  font-family: var(--font-montserrat), Helvetica, sans-serif;
+  background-color: var(--primary-bg);
+}
+
+@layer utilities {
+  .accent-font {
+    font-family: var(--font-raleway), Helvetica, sans-serif;
+  }
+}
